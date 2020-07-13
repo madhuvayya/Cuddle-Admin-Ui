@@ -1,0 +1,77 @@
+body {
+    background-color: #e5ecee;
+}
+
+div.container{
+    box-shadow: rgb(245, 238, 238);
+    box-sizing: content-box;
+    padding: 2%;
+    display: flex;
+}
+
+div.left {
+    color: white;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    width: 15%;
+    float: left;
+    background-color: rgb(42, 42, 42);
+    padding: 10px;
+    padding-bottom: 190px;
+    text-align: left;
+    height: 300px;
+}
+
+div.right{
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 10px;
+    width: 75%;
+    box-shadow: blueviolet;
+    background-color: white;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    height: 475px;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.ask {
+    width: 500px;
+    height: 20px;
+    padding-right: 50px;
+    padding-left: 48px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+span.admin {
+    font-size: 15px;
+    box-sizing: content-box;
+    background-color: blue;
+    color: white ;
+}
+
+div.right-top{
+    background-color: white;
+    height: 50px;
+}
+
+div.right-bottom {
+    margin-top: 10px;
+    background-color: white;
+}
+
+.addNewUserButton {
+    background-color:blue;
+    color: white;
+    text-align:center;
+    position: absolute;
+    top: 100px;
+    right: 380px;
+}
