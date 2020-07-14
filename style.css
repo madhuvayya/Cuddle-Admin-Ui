@@ -5,8 +5,9 @@ body {
 div.container{
     box-shadow: rgb(245, 238, 238);
     box-sizing: content-box;
-    padding: 2%;
+    padding: 2% 2% 2% 2%;
     display: flex;
+    align-content:center;
 }
 
 div.left {
@@ -32,7 +33,6 @@ div.right{
     background-color: white;
     border-top-right-radius: 5%;
     border-bottom-right-radius: 5%;
-    height: 475px;
 }
 
 .wrapper {
@@ -58,13 +58,17 @@ span.admin {
 }
 
 div.right-top{
+    padding: 2px;
     background-color: white;
-    height: 50px;
+    height: 25px;
+    width: 78%;
+    border-style: groove;
 }
 
 div.right-bottom {
-    margin-top: 10px;
+    margin-top: 15px;
     background-color: white;
+    border: black;
 }
 
 .users{
@@ -73,7 +77,7 @@ div.right-bottom {
 }
 
 .addNewUser {
-    margin-left: 70%;
+    margin-left: 65%;
     background-color:blue;
     color: white;
 }
@@ -81,6 +85,19 @@ div.right-bottom {
 .addButton {
     background-color:blue;
     color: white;
+}
+
+.search {
+    float: left;
+}
+
+.show{
+    width: 100%;
+}
+
+.anchor {
+    color: white;
+    text-decoration: none;
 }
 
 /* -----
