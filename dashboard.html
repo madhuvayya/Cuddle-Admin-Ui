@@ -46,44 +46,43 @@
                     <button class="addNewUserButton" onclick="showOptions('addUser')" >+ADD NEW</button>
                     <div id="addUser">
                         <h2>Enter Details:</h2>
-                        <table>
-                            <tr>
-                                <td><label>Name:</label>   
-                                <input type="text" id="name" placeholder="Name"></td>
-                                <td><label>Email:</label>
-                                <input type="text" id="email" placeholder="Email"><br/></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                <label>Status:</label>
-                                <input type="text" id="status" placeholder="Status"></td>
-                                <td><label>Role:</label>
-                                <input type="text" id="role" placeholder="Role"><br/></td>
-                            </tr>
-                            <tr>
-                                <td><label>Last Login Time:</label>
-                                <input type="text" id="lastLogin" placeholder="Login"></td>
-                                <td><label>Permission:</label>
-                                <input type="text" id="permission" placeholder="Permission"></td>
-                            </tr>
-                            <tr>
-                                <td style="align-items: center;"><button onclick="newUser()" class="addBtn">Add</button></td>
-                            </tr>    
-                        </table>
+                        <form>
+                            <table border="4">
+                                    <tr>
+                                        <th>Name</th>
+                                        <td><input type="text" name="name" id="name" placeholder="Name"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Email</th>
+                                        <td><input type="text" name="email" id="email" placeholder="Email"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Email</th>
+                                        <td><input type="text" name="status" id="status" placeholder="Status"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Age</th>
+                                        <td><input type="text" name="role" id="role" placeholder="Role"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="align-items: center;"><button onclick="newUser()" class="addBtn">Add</button></td>
+                                    </tr>
+                            </table>        
+                        </form>
                     </div>
                     <br/>
-                    <table style="width:100%">
-                        <tr>
-                            <td>Name</td>
-                            <td>Email</td>
-                            <td>Status</td>
-                            <td>Role</td>
-                            <td>Last Login</td>
-                            <td>Permission</td>
-                        </tr>
+                    <table border="4" id="show">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Status</th>
+                                <th>Role</th>
+                                <th>Last Login</th>
+                                <th>Permission</th>
+                            </tr>
+                        </thead>
                     </table>
-                    <ul id="userUL">
-                    </ul>
                 </div>    
             </div>
     </div>
