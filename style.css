@@ -75,3 +75,23 @@ div.right-bottom {
     top: 100px;
     right: 380px;
 }
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+    width: 1em;
+    height: 1em;
+  }
+  
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill: hsl(180, 10%, 96%);
+  }
+  
+  .svg-icon circle {
+    stroke: #f5f4f4;
+    stroke-width: 1;
+  }
