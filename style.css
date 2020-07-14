@@ -12,8 +12,9 @@ div.container{
 
 div.left {
     color: white;
-    border-top-left-radius: 5%;
-    border-bottom-left-radius: 5%;
+    border-radius: 10px;
+    /* border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%; */
     width: 15%;
     float: left;
     background-color: rgb(42, 42, 42);
@@ -35,17 +36,6 @@ div.right{
     border-bottom-right-radius: 5%;
 }
 
-.wrapper {
-    position: relative;
-}
-
-.ask {
-    width: 500px;
-    height: 20px;
-    padding-right: 50px;
-    padding-left: 48px;
-}
-
 h3 {
     font-size: 20px;
 }
@@ -62,7 +52,6 @@ div.right-top{
     background-color: white;
     height: 25px;
     width: 78%;
-    border-style: groove;
 }
 
 div.right-bottom {
@@ -98,6 +87,34 @@ div.right-bottom {
 .anchor {
     color: white;
     text-decoration: none;
+}
+
+.buttonIn {  
+    position: relative; 
+} 
+  
+.ask { 
+    margin: 0px; 
+    padding: 0px; 
+    width: 100%;
+    outline: none; 
+    height: 30px; 
+    border-radius: 5px; 
+} 
+  
+button { 
+    position: absolute; 
+    top: 0; 
+    border-radius: 5px; 
+    right: 0px; 
+    z-index: 2; 
+    border: none; 
+    top: 2px; 
+    height: 25px; 
+    cursor: pointer; 
+    color: rgb(10, 10, 10); 
+    background-color: #eaedf0; 
+    transform: translateX(2px); 
 }
 
 /* -----
