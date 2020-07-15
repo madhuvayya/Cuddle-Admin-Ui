@@ -11,6 +11,7 @@
 <body>
     <div class="container">
             <div class="left">
+             <div class="left-top">
                 <span>Cuddle <span class="admin">  ADMIN </span></span>
                 <br/><br/>
                 <span>
@@ -31,76 +32,48 @@
                 <i class="fa fa-lock"></i>
                 <span><a href="#" onclick="showOptions('adminOptions')" class="anchor">Authorization</a></span>
                 <div id="adminOptions">
-                    <p> &nbsp;&nbsp;&nbsp;<a href="#" class="anchor"> Users </a></p>
+                    <p> &nbsp;&nbsp;&nbsp;<a href="#" class="anchor" onclick="getData()"> Users </a></p>
                     <p> &nbsp;&nbsp;&nbsp; <a href="#" class="anchor"> Group </a></p>
                     <p> &nbsp;&nbsp;&nbsp; <a href="#" class="anchor">  Permissions </a></p>
                 </div>
             </div>
+                <div class="left-bottom">
+                    <span><img src="ryan-larson.png" alt="img"/><a>Ryan Larson</a></span>
+                </div>
+            </div>
             <div class="right">
-                <div class="right-top">                        
-                        <button>Ask</button>
+                <div class="right-top">
                         <div class="buttonIn"> 
-                            <input type="text" id="enter" class="ask" placeholder="What do you want to ask?"> 
-                            <i id="clear" class="fa fa-question-circle"></i>
-                            <button id="clear">clear</button> 
+                            <input type="text" id="enter" class="ask" placeholder=" What do you want to ask?">
+                            <span class="icon-symbol" style="color: white;">&#63;</span> 
+                            <button id="askButton" class="askButton">Ask</button> 
                         </div> 
                 </div>
                 <br/>
                 <div class="right-bottom">
-                    <span class="users">Users(20)</span>
-                    <span class="addNewUser"><button class="addButton" >+ADD NEW</button></span>
-                    <br/>
-                    <div id="addUser">
-                        <h2>Enter Details:</h2>
-                        <form>
-                            <table>
-                                    <tr>
-                                        <th>Name</th>
-                                        <td><input type="text" name="name" id="name" placeholder="Name"></td>
-                                    </tr>
-                                    <tr>
-                                        <th>Email</th>
-                                        <td><input type="text" name="email" id="email" placeholder="Email"></td>
-                                    </tr>
-                                    <tr>
-                                        <th>Status</th>
-                                        <td><input type="text" name="status" id="status" placeholder="Status"></td>
-                                    </tr>
-                                    <tr>
-                                        <th>Role</th>
-                                        <td><input type="text" name="role" id="role" placeholder="Role"></td>
-                                    </tr>
-                                    <tr>
-                                        <th>Last Login</th>
-                                        <td><input type="text" name="lastLogin" id="lastlogin" placeholder="Last Login"></td>
-                                    </tr>
-                                    <tr>
-                                        <th>Permissions</th>
-                                        <td><input type="text" name="permission" id="permission" placeholder="Permissions"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><button onclick="AddRow()" class="addBtn">Add</button></td>
-                                    </tr>
-                            </table>        
-                        </form>
-                    </div>
+                    <div class="users">
+                        <div class="numberOfUsers">Users(20)</div>
+                        <div class="addButtonDiv"><button class="addButton">+ADD NEW</button></div>
+                    </div>    
                     <br/>
                     <div class="search">
-                        <input type="text" class="ask" placeholder="Search for user" />
+                        <input type="text" class="userSearch" placeholder=" Search User Name,Email,Status,Role"/>
                     </div>
-                    <br/><br/>
-                    <table border="1" id="show" class="show">
-                        <thead>
+                    <br/><br/><br/>
+                    <div class="userList"> 
+                        <table id="show" class="userListTable" border-collapse:"collapse">
                             <tr>
-                                <td>Name</td>
-                                <td>Email</td>
-                                <td>Status</td>
-                                <td>Role</td>
-                                <td>Last Login</td>
-                                <td>Permission</td>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Status</th>
+                                <th>Role</th>
+                                <th>Last Login</th>
+                                <th>Permission</th>
+                                <th></th>
                             </tr>
-                        </thead>
-                    </table>
+                        </table>
+                    </div>
+                    <div id="box" border-collapse:"collapse"></div>   
                 </div>    
                 </div>    
             </div>
