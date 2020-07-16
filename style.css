@@ -4,6 +4,9 @@ body {
 
 .container{
     margin: auto;
+    display: flexbox;
+    height: 100%;
+    background-color: rgb(228, 225, 225);
 }
 
 .left {
@@ -21,7 +24,7 @@ body {
 .right{
     float: left;
     padding: 10px;
-    width: 81%;
+    width: 80%;
     height: 100%;
     background-color: white;
     border-top-right-radius: 10px;
@@ -47,16 +50,18 @@ div.right-top{
     padding: 2px;
     background-color: white;
     height: 25px;
-    width: 78%;
+    width: 95%;
     border: black;
     box-shadow: rgb(158, 157, 157);
 }
 
 div.right-bottom {
-    margin: 10px;
+    margin: 15px;
+    border:1px solid #4CAF50;
     background-color: white;
     border: black;
     box-shadow: grey;
+    height: 70%;
 }
 
 .users{
@@ -175,6 +180,10 @@ table {
     border-radius: 5px;
 }
 
+#box{
+    overflow-y: scroll;
+}
+
 /* -----
 SVG Icons - svgicons.sparkk.fr
 ----- */
@@ -187,18 +196,10 @@ SVG Icons - svgicons.sparkk.fr
   .svg-icon path,
   .svg-icon polygon,
   .svg-icon rect {
-    fill: hsl(180, 10%, 96%);
+    fill: hsl(180, 10%, 96%);;
   }
   
   .svg-icon circle {
-    stroke: #f5f4f4;
+    stroke: #f3f3f3;
     stroke-width: 1;
   }
-
-  @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-}

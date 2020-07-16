@@ -88,7 +88,26 @@ var userList = [
         lastLogin:'4 Days ago',
         permission:'Inalid',
         others:'...'
+    },
+    {
+        name:'Mithin',
+        email:'pmithinkumar@gmail.com',
+        status:'<button class="inactive-button">Inactive</button>',
+        role:'User',
+        lastLogin:'4 Days ago',
+        permission:'Inalid',
+        others:'...'
+    },
+    {
+        name:'Mithin',
+        email:'pmithinkumar@gmail.com',
+        status:'<button class="inactive-button">Inactive</button>',
+        role:'User',
+        lastLogin:'4 Days ago',
+        permission:'Inalid',
+        others:'...'
     }
+
 ]
 
 function showOptions(inputValue) {
