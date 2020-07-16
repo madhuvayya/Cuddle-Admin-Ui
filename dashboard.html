@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="javascript.js"></script>
 </head>
-<body>
+<body onload="getData()">
     <div class="container">
             <div class="left">
              <div class="left-top">
@@ -32,7 +32,7 @@
                 <i class="fa fa-lock"></i>
                 <span><a href="#" onclick="showOptions('adminOptions')" class="anchor">Authorization</a></span>
                 <div id="adminOptions">
-                    <p> &nbsp;&nbsp;&nbsp;<a href="#" class="anchor" onclick="getData()"> Users </a></p>
+                    <p> &nbsp;&nbsp;&nbsp;<a href="#" class="anchor"> Users </a></p>
                     <p> &nbsp;&nbsp;&nbsp; <a href="#" class="anchor"> Group </a></p>
                     <p> &nbsp;&nbsp;&nbsp; <a href="#" class="anchor">  Permissions </a></p>
                 </div>
@@ -55,24 +55,19 @@
                         <div class="numberOfUsers">Users(20)</div>
                         <div class="addButtonDiv"><button class="addButton">+ADD NEW</button></div>
                     </div>    
-                    <br/>
+                    <br/><br>
                     <div class="search">
                         <input type="text" class="userSearch" placeholder=" Search User Name,Email,Status,Role"/>
                     </div>
                     <br/><br/><br/>
-                    <div class="userList"> 
-                        <table id="show" class="userListTable" border-collapse:"collapse">
-                            <tr>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Status</th>
-                                <th>Role</th>
-                                <th>Last Login</th>
-                                <th>Permission</th>
-                                <th></th>
-                            </tr>
-                        </table>
-                    </div>
+                    <span style="display:inline-block; width: 17.5%; font-weight: bold;"> &nbsp;&nbsp; Name </span>
+                    <span style="display:inline-block; width: 18%; font-weight: bold;""> Email </span>
+                    <span style="display:inline-block; width: 16.5%; font-weight: bold;"">Status </span>
+                    <span style="display:inline-block; width: 17%; font-weight: bold;"">Role </span>
+                    <span style="display:inline-block; width: 15%; font-weight: bold;"" >Last Login </span>
+                    <span style="display:inline-block; width: 5%; font-weight: bold;"">Permission </span>
+                    <span style="display:inline-block; width: 5%; font-weight: bold;""></span>   
+                    <br/> 
                     <div id="box" border-collapse:"collapse"></div>   
                 </div>    
                 </div>    
