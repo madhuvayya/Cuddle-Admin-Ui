@@ -23,7 +23,6 @@ body {
 
 .right{
     float: left;
-    padding: 10px;
     width: 80%;
     height: 100%;
     background-color: white;
@@ -49,18 +48,19 @@ body {
 div.right-top{
     padding: 2px;
     background-color: white;
-    height: 25px;
-    width: 95%;
-    border: black;
-    box-shadow: rgb(158, 157, 157);
+    height: 20%;
+    box-shadow: 5px 5px 10px grey;
+    border-top-right-radius: 5px;
 }
 
 div.right-bottom {
-    margin: 15px;
+    margin-top: 5px;
+    margin-left: 10px;
     border:1px solid #4CAF50;
     background-color: white;
-    border: black;
-    box-shadow: grey;
+    padding: 10px;
+    border: 1px solid grey;
+    box-shadow: -5px -5px 10px rgb(185, 184, 184);
     height: 70%;
 }
 
@@ -115,9 +115,9 @@ div.right-bottom {
 } 
   
 .ask { 
-    margin: 0px; 
+    margin: 10px; 
     padding: 0px; 
-    width: 100%;
+    width: 97%;
     outline: none; 
     height: 30px; 
     border-radius: 5px; 
@@ -125,15 +125,15 @@ div.right-bottom {
 } 
 
 .askButton {
-    margin-top: 2px;
-    margin-right: 1%;
-    position: absolute; 
+    margin-top: 12px;
+    margin-right: 22px;
+    position: absolute;     
     top: 0; 
     border-radius: 5px; 
     right: 0px; 
     z-index: 2; 
     border: none; 
-    width:40px;
+    width:60px;
     top: 2px; 
     height: 25px; 
     cursor: pointer; 
@@ -168,7 +168,7 @@ table {
 
 .active-button {    
     border: 2px solid rgb(94, 201, 94);
-    color: rgb(94, 201, 94);;
+    color: rgb(94, 201, 94);
     background-color: white;
     border-radius: 5px;
 }
@@ -178,10 +178,6 @@ table {
     color: rgb(201, 196, 196);
     background-color: white;
     border-radius: 5px;
-}
-
-#box{
-    overflow-y: scroll;
 }
 
 /* -----
