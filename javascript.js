@@ -112,7 +112,6 @@ function createTable(){
         html+="<td>"+userList[i].lastLogin+"</td>";
         html+="<td>"+userList[i].permission+"</td>";
         html+="<td>"+'...'+"</td>";
-
         html+="</tr>";
     }
     html+="</table>";

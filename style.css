@@ -1,35 +1,61 @@
-body {
-    background-color: #e5ecee;
+html ,body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .container{
-    margin: auto;
+    width:100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
-    height: 100%;
     background-color: rgb(228, 225, 225);
+    overflow: hidden;
+}
+
+.cuddle {
+    margin:10px;    
 }
 
 .left {
     color: white;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 5px;
-    width: 15%;
-    float: left;
+    width: 18%;
     background-color: rgb(42, 42, 42);
     padding: 10px;
     text-align: left;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.left i, .svg-icon, .left img {
+    font-size: 17px ;
+    margin-right: 10px;
+}
+
+.left-top div {
+    margin:15px;
+    cursor: pointer;
+}
+
+#adminOptions {
+    margin-left: 20px;
+}
+
+.left-bottom {
+    justify-self: end;
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    align-items: center;
 }
 
 .right{
-    float: left;
-    width: 80%;
-    height: inherit;
+    width: 82%;
     background-color: white;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
 .admin {
@@ -37,24 +63,14 @@ body {
     box-sizing: content-box;
     background-color: blue;
     color: white ;
-}
-
-.left-top {
-    height: 90%;
-}
-
-.left-bottom {
-    margin-top: 100%;
-    height: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    padding: 2px;
+    border-radius: 3px;
 }
 
 div.right-top{
     padding: 2px;
     background-color: white;
-    height: 20%;
+    height: 10%;
     box-shadow: 5px 5px 10px grey;
     border-top-right-radius: 5px;
 }
@@ -68,7 +84,8 @@ div.right-bottom {
     padding: 10px;
     border: 1px solid grey;
     box-shadow: -5px -5px 10px rgb(185, 184, 184);
-    height: 70%;
+    height: 80%;
+    overflow-y: scroll;
 }
 
 .users{
@@ -100,10 +117,10 @@ div.right-bottom {
 
 .userSearch{ 
     margin: 0px; 
-    padding: 0px; 
+    padding-left: 8px; 
     width: 50%;
     outline: none; 
-    height: 30px; 
+    height: 25px; 
     border-radius: 5px; 
     text-decoration: none;
 }
@@ -124,7 +141,7 @@ div.right-bottom {
   
 .ask { 
     margin: 10px; 
-    padding: 0px; 
+    padding-left: 6px; 
     width: 97%;
     outline: none; 
     height: 30px; 
