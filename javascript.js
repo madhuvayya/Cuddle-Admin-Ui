@@ -121,3 +121,8 @@ function getData(){
     createTable();
     document.getElementById("box").innerHTML = html;
 }
+
+function numberOfUser() {
+    var numberOfUsers = userList.length;
+    document.getElementById("numberOfUsers").innerHTML= "Users("+numberOfUsers+")";
+}
